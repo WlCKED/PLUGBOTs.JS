@@ -682,7 +682,7 @@
 
     whyWootCommand.prototype.functionality = function() {
       var msg, nameIndex;
-      msg = "We dislike AFK djs. We calculate your AFK status by checking the last time you			Woot'd or spoke. If you don't woot, I'll automagically remove you. Use our AutoWoot			script to avoid being removed: http://bit.ly/McZdWw";
+      msg = "We dislike AFK djs. We calculate your AFK status by checking the last time you			Woot'd or spoke. If you don't woot, I'll automagically remove you. Use our AutoWoot			script to avoid being removed: http://justpaste.it/d3z3";
       if ((nameIndex = this.msgData.message.indexOf('@')) !== -1) {
         return API.sendChat(this.msgData.message.substr(nameIndex) + ', ' + msg);
       } else {
@@ -815,7 +815,7 @@
 
     wootCommand.prototype.functionality = function() {
       var msg, nameIndex;
-      msg = "Please WOOT on DJ Booth and support your fellow DJs! AutoWoot: http://bit.ly/Lwcis0";
+      msg = "Please WOOT on DJ Booth and support your fellow DJs! AutoWoot: http://justpaste.it/d3z3";
       if ((nameIndex = this.msgData.message.indexOf('@')) !== -1) {
         return API.sendChat(this.msgData.message.substr(nameIndex) + ', ' + msg);
       } else {
