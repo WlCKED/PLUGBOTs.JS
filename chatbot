@@ -341,7 +341,7 @@
   })();
 
   pupOnline = function() {
-    return API.sendChat("The Nigga Bot is now ONLINE!");
+    return API.sendChat("/me xD");
   };
 
   populateUserData = function() {
@@ -1030,7 +1030,7 @@
     }
 
     dieCommand.prototype.init = function() {
-      this.command = '!die';
+      this.command = '!suicide';
       this.parseType = 'exact';
       return this.rankPrivelege = 'host';
     };
@@ -1040,7 +1040,7 @@
       undoHooks();
       API.sendChat('Deleting bot data...');
       data.implode();
-      return API.sendChat('Consider me dead');
+      return API.sendChat('BOT DEAD');
     };
 
     return dieCommand;
