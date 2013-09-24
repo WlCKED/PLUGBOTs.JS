@@ -81,9 +81,9 @@
     };
 
     settings.prototype.newSong = function() {
-      this.totalVotingData.woots += this.currentwoots;
-      this.totalVotingData.mehs += this.currentmehs;
-      this.totalVotingData.curates += this.currentcurates;
+      this.totalRoomScore.woots += this.currentwoots;
+      this.totalRoomScore.mehs += this.currentmehs;
+      this.totalRoomScore.curates += this.currentcurates;
       this.setInternalWaitlist();
       this.currentsong = API.getMedia();
       if (this.currentsong !== null) {
